@@ -61,6 +61,8 @@ resource "azurerm_subscription_policy_assignment" "assign_deny_storage" {
   subscription_id      = var.subscription_id
 
   parameters = jsonencode({
-    "restrictedLocations" : var.restricted_locations
-  })
+  "restrictedLocations" = {
+    "value" = var.restricted_locations
+  }
+})
 }
