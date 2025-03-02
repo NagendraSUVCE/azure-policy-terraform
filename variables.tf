@@ -25,7 +25,7 @@ variable "assignment_display_name" {
 variable "subscription_id" {
   description = "Azure Subscription ID where the policy is assigned"
   type        = string
-  default     = "6a733d98-c87a-49b1-91ed-418b37a57f4e" # Ensure this matches your actual Azure Subscription ID
+  default     = "subscriptions/6a733d98-c87a-49b1-91ed-418b37a57f4e" # Ensure this matches your actual Azure Subscription ID
 }
 
 variable "allowed_locations" {
