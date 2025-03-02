@@ -22,8 +22,8 @@ variable "assignment_display_name" {
   default     = "Deny Storage Account Creation Assignment"
 }
 
-variable "scope" {
-  description = "Subscription ID where the policy is applied"
+variable "subscription_id" {
+  description = "Azure Subscription ID where the policy is assigned"
   type        = string
 }
 
